@@ -90,6 +90,16 @@ mlir-opt "${args[@]}"
 # TODO: add a pass
 # rm transform-dialect manually
 # get `main.mlir`
+# or
+# `xyz.mlir_erase_transform` from https://github.com/gglin001/xyz/tree/main/src/xyz/mlir_erase_transform
+
+DIR=_demos/tmp
+mkdir -p $DIR
+args=(
+  -o $DIR/main.mlir
+  $DIR/mlir-opt.mlir
+)
+xyz.mlir_erase_transform "${args[@]}"
 
 ######
 
