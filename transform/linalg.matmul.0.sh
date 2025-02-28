@@ -112,3 +112,23 @@ args=(
 mlir-translate "${args[@]}"
 
 ###############################################################################
+
+exit
+
+DIR="_demos/tmp" && mkdir -p $DIR
+args=(
+  --mattr=+m
+  --mattr=+zve64x
+  -riscv-v-vector-bits-min=512
+  #
+  -target-abi=lp64
+  -march=riscv64
+  -mcpu=generic-rv64
+  #
+  -O0
+  -o $DIR/main.s
+  $DIR/main.ll
+)
+llc "${args[@]}"
+
+###############################################################################
