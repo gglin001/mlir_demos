@@ -2,7 +2,7 @@
     "terminal.integrated.env.osx": {
         "EXT_PATH": "llvm-project/build/bin",
         "TRITON_HOME": "${workspaceFolder}/_demos",
-        "TRITON_MOCK_PTX_VERSION": "12.8",
+        "TRITON_MOCK_PTX_VERSION": "84",
     },
     // mlir/mlir-custom, needs abs paths
     "mlir.server_path": "llvm-project/build/bin/mlir-lsp-server",

@@ -35,5 +35,5 @@ with tempfile.NamedTemporaryFile(
     target = triton.backends.compiler.GPUTarget("cuda", 86, 32)
     # target = triton.backends.compiler.GPUTarget("cuda", 90, 32)
 
-    options = {"ptx_version": 12.8}
+    options = {"ptx_version": 84}
     kernel = triton.compile(fp.name, target=target, options=options)
