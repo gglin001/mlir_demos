@@ -36,7 +36,13 @@ def add_kernel(
 src = tc.ASTSource(
     fn=add_kernel,
     constexprs={"BLOCK_SIZE": 64},
-    signature="*fp32,*fp32,*fp32,i32,i32",
+    signature={
+        "x_ptr": "*fp32",
+        "y_ptr": "*fp32",
+        "output_ptr": "*fp32",
+        "n_elements": "i32",
+        "BLOCK_SIZE": "i32",
+    },
 )
 
 
