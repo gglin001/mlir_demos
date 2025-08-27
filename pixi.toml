@@ -7,11 +7,10 @@ version = "0.1.0"
 [pypi-options]
 index-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
 
-
 [tasks]
 
 [dependencies]
 python = "3.13.*"
 uv = ">=0.8.13,<0.9"
 mlir = ">=20.1.8,<21"
-# triton = ">=3.4.0,<4"
+triton = ">=3.4.0,<4"
