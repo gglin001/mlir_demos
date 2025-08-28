@@ -19,7 +19,9 @@ mlir = { version = "21.1.0.rc3.*", channel = "conda-forge/label/llvm_rc" }
 [pypi-dependencies]
 iree-base-compiler = ">=3.6.0, <4"
 iree-base-runtime = ">=3.6.0, <4"
-xyz = { git = "https://github.com/gglin001/xyz.git" }
+# use git submodule for a bad network
+xyz = { path = "./xyz" }
+# xyz = { git = "https://github.com/gglin001/xyz.git" }
 
 [target.linux-aarch64.dependencies]
 triton = ">=3.4.0,<4"
