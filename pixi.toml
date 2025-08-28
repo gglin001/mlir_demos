@@ -14,3 +14,7 @@ python = "3.13.*"
 uv = ">=0.8.13,<0.9"
 mlir = ">=20.1.8,<21"
 triton = ">=3.4.0,<4"
+
+[pypi-dependencies]
+iree-base-compiler = ">=3.6.0, <4"
+iree-base-runtime = ">=3.6.0, <4"
