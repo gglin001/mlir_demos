@@ -18,3 +18,4 @@ triton = ">=3.4.0,<4"
 [pypi-dependencies]
 iree-base-compiler = ">=3.6.0, <4"
 iree-base-runtime = ">=3.6.0, <4"
+xyz = { git = "https://github.com/gglin001/xyz.git" }
