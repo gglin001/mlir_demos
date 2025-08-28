@@ -2,7 +2,7 @@
 # https://anaconda.org/conda-forge/mlir/files
 channels = ["conda-forge/label/llvm_rc", "conda-forge"]
 name = "mlir_demos"
-platforms = ["linux-aarch64"]
+platforms = ["linux-aarch64", "osx-arm64"]
 version = "0.1.0"
 
 [pypi-options]
@@ -13,7 +13,6 @@ index-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
 [dependencies]
 python = "3.13.*"
 uv = ">=0.8.13,<0.9"
-triton = ">=3.4.0,<4"
 # TODO: use v21.1.x after mlir update
 mlir = { version = "21.1.0.rc3.*", channel = "conda-forge/label/llvm_rc" }
 
@@ -21,3 +20,6 @@ mlir = { version = "21.1.0.rc3.*", channel = "conda-forge/label/llvm_rc" }
 iree-base-compiler = ">=3.6.0, <4"
 iree-base-runtime = ">=3.6.0, <4"
 xyz = { git = "https://github.com/gglin001/xyz.git" }
+
+[target.linux-aarch64.dependencies]
+triton = ">=3.4.0,<4"
