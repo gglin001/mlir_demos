@@ -10,6 +10,11 @@ export CUTE_DSL_PRINT_IR=1
 export CUTE_DSL_KEEP_IR=1
 export CUTE_DSL_PRINT_AFTER_PREPROCESSOR=1
 
+# nvidia/cuda:13.0.0-cudnn-devel-ubuntu24.04
+export CUDA_TOOLKIT_PATH="/usr/local/cuda"
+export LD_LIBRARY_PATH="/usr/local/cuda/compat:$LD_LIBRARY_PATH"
+
 pushd cute
-python elementwise_add.py 2>&1 | tee elementwise_add.sh.log
+python elementwise_add.py 2>&1 | tee elementwise_add.py.log
+# python add.py 2>&1 | tee add.py.log
 popd
