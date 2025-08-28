@@ -7,6 +7,11 @@ version = "0.1.0"
 
 [tasks]
 
+[environments]
+default = []
+# cuda = ["cuda"]
+
+
 [dependencies]
 # python = "3.13.*"
 python = "3.12.*"    # cute needs 3.12
@@ -27,3 +32,6 @@ triton = ">=3.4.0,<4"
 
 [target.linux-aarch64.pypi-dependencies]
 nvidia-cutlass-dsl = ">=4.1.0, <5"
+
+# [feature.cuda.target.linux-aarch64.dependencies]
+# pytorch-gpu = "2.7.1"
