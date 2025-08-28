@@ -12,3 +12,4 @@ config.test_format = lit.formats.ShTest(execute_external=True)
 config.suffixes = set([".mlir"])
 
 config.test_exec_root = os.path.join(tempfile.gettempdir(), "lit")
+# config.test_exec_root = os.path.join("_demos", "lit") # debug
