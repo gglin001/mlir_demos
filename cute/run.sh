@@ -10,6 +10,13 @@ export CUTE_DSL_PRINT_IR=1
 export CUTE_DSL_KEEP_IR=1
 export CUTE_DSL_PRINT_AFTER_PREPROCESSOR=1
 
+export CUTE_DSL_ARCH=sm_86
+# export CUTE_DSL_ARCH=sm_90
+# export CUTE_DSL_ARCH=sm_100
+
+# TODO: needs real cuda runtime
+# export CUTE_DSL_DRYRUN=1
+
 # nvidia/cuda:13.0.0-cudnn-devel-ubuntu24.04
 export CUDA_TOOLKIT_PATH="/usr/local/cuda"
 export LD_LIBRARY_PATH="/usr/local/cuda/compat:$LD_LIBRARY_PATH"

@@ -6,4 +6,4 @@
 pixi.lock
 
 *.log
-cute/*.mlir
+cute/**/*.mlir
