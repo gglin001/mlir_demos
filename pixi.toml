@@ -5,9 +5,6 @@ name = "mlir_demos"
 platforms = ["linux-aarch64", "osx-arm64"]
 version = "0.1.0"
 
-[pypi-options]
-index-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-
 [tasks]
 
 [dependencies]
