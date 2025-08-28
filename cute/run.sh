@@ -21,6 +21,9 @@ export CUTE_DSL_ARCH=sm_86
 export CUDA_TOOLKIT_PATH="/usr/local/cuda"
 export LD_LIBRARY_PATH="/usr/local/cuda/compat:$LD_LIBRARY_PATH"
 
+# for custom patch
+# export PYTHONPATH="/repos/cutlass/python/CuTeDSL:$PYTHONPATH"
+
 pushd cute
 python elementwise_add.py 2>&1 | tee elementwise_add.py.log
 # python add.py 2>&1 | tee add.py.log
