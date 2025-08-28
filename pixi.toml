@@ -12,6 +12,7 @@ python = "3.13.*"
 uv = ">=0.8.13,<0.9"
 # TODO: use v21.1.x after mlir update
 mlir = { version = "21.1.0.rc3.*", channel = "conda-forge/label/llvm_rc" }
+lit = "*"
 
 [pypi-dependencies]
 iree-base-compiler = ">=3.6.0, <4"
