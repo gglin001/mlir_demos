@@ -29,8 +29,11 @@ export CUTE_DSL_ARCH=sm_86
 # export CUTE_DSL_DRYRUN=1
 
 # for custom patch
+export CUTE_COMPILE_NO_CACHE=0
+export CUTE_COMPILE_IR_PRINTING=1
 export PYTHONPATH="/repos/cutlass/python/CuTeDSL:$PYTHONPATH"
 
 pushd $script_dir
-python elementwise_add.py 2>&1 | tee elementwise_add.py.log
+# python elementwise_add.py 2>&1 | tee elementwise_add.py.log
+python tensorop_gemm.py 2>&1 | tee tensorop_gemm.py.log
 popd

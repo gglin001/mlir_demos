@@ -19,6 +19,7 @@ export CUTE_DSL_LOG_LEVEL=10
 export CUTE_DSL_PRINT_IR=1
 export CUTE_DSL_KEEP_IR=1
 export CUTE_DSL_PRINT_AFTER_PREPROCESSOR=1
+export CUTE_DSL_DISABLE_FILE_CACHING=0
 
 export CUTE_DSL_ARCH=sm_86
 # export CUTE_DSL_ARCH=sm_90
@@ -32,7 +33,9 @@ export CUDA_TOOLKIT_PATH="/usr/local/cuda"
 export LD_LIBRARY_PATH="/usr/local/cuda/compat:$LD_LIBRARY_PATH"
 
 # for custom patch
-# export PYTHONPATH="/repos/cutlass/python/CuTeDSL:$PYTHONPATH"
+export CUTE_COMPILE_NO_CACHE=0
+export CUTE_COMPILE_IR_PRINTING=1
+export PYTHONPATH="/repos/cutlass/python/CuTeDSL:$PYTHONPATH"
 
 pushd $script_dir
 python elementwise_add.py 2>&1 | tee elementwise_add.py.log
