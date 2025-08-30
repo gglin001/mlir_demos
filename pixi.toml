@@ -26,6 +26,7 @@ iree-base-compiler = ">=3.6.0, <4"
 iree-base-runtime = ">=3.6.0, <4"
 # use git submodule for a bad network
 xyz = { path = "./xyz" }
+filecheck = ">=1.0.3, <2"
 # xyz = { git = "https://github.com/gglin001/xyz.git" }
 
 [target.linux-aarch64.dependencies]
