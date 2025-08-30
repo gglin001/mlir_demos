@@ -27,9 +27,14 @@ export CUTE_DSL_ARCH=sm_86
 # TODO: needs real cuda runtime
 # export CUTE_DSL_DRYRUN=1
 
+# nvidia/cuda:13.0.0-cudnn-devel-ubuntu24.04
+export CUDA_TOOLKIT_PATH="/usr/local/cuda"
+export LD_LIBRARY_PATH="/usr/local/cuda/compat:$LD_LIBRARY_PATH"
+
 # for custom patch
 # export PYTHONPATH="/repos/cutlass/python/CuTeDSL:$PYTHONPATH"
 
 pushd $script_dir
 python elementwise_add.py 2>&1 | tee elementwise_add.py.log
+# python add.py 2>&1 | tee add.py.log
 popd
