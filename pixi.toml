@@ -33,6 +33,10 @@ triton = ">=3.4.0,<4"
 
 [target.linux-aarch64.pypi-dependencies]
 nvidia-cutlass-dsl = ">=4.1.0, <5"
+# install with uv for bad network, use `--no-deps` in cuda env
+# uv pip install "torch==2.8.0+cu129" "torchaudio==2.8.0" "torchvision==0.23.0" -i https://download.pytorch.org/whl/cu129/ --no-deps
+# uv pip install "torch==2.8.0+cu129" "torchaudio==2.8.0" "torchvision==0.23.0" -i https://mirror.sjtu.edu.cn/pytorch-wheels/cu129/ --no-deps
+# torch = { version = "==2.8.0+cu129", index = "https://download.pytorch.org/whl/cu129" }
 
 [target.linux-64.dependencies]
 cusparselt = ">=0.8.0.4,<0.9"
