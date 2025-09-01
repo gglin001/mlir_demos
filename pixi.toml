@@ -25,18 +25,15 @@ mlir = ">=21.1.0,<22"
 iree-base-compiler = ">=3.6.0, <4"
 iree-base-runtime = ">=3.6.0, <4"
 # use git submodule for a bad network
+# xyz = { git = "https://github.com/gglin001/xyz.git" }
 xyz = { path = "./xyz" }
 filecheck = ">=1.0.3, <2"
-# xyz = { git = "https://github.com/gglin001/xyz.git" }
 
 [target.linux-aarch64.dependencies]
 triton = ">=3.4.0,<4"
 
 [target.linux-aarch64.pypi-dependencies]
 nvidia-cutlass-dsl = ">=4.1.0, <5"
-
-# [feature.cuda.target.linux-aarch64.dependencies]
-# pytorch-gpu = "2.7.1"
 
 [target.linux-64.dependencies]
 cusparselt = ">=0.8.0.4,<0.9"
