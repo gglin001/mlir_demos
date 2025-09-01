@@ -1,9 +1,9 @@
 [workspace]
 # https://anaconda.org/conda-forge/mlir/files
-channels = ["conda-forge/label/llvm_rc", "conda-forge"]
+# channels = ["conda-forge/label/llvm_rc", "conda-forge"]
+channels = ["conda-forge"]
 name = "mlir_demos"
 platforms = ["linux-aarch64", "osx-arm64", "linux-64"]
-# platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
@@ -17,9 +17,9 @@ default = []
 # python = "3.13.*"
 python = "3.12.*"    # cute needs 3.12
 uv = ">=0.8.13,<0.9"
-# TODO: use v21.1.x after mlir update
-mlir = { version = "21.1.0.rc3.*", channel = "conda-forge/label/llvm_rc" }
 lit = "*"
+# mlir = { version = "21.1.0.rc3.*", channel = "conda-forge/label/llvm_rc" }
+mlir = ">=21.1.0,<22"
 
 [pypi-dependencies]
 iree-base-compiler = ">=3.6.0, <4"
