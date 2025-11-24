@@ -7,3 +7,5 @@ pixi.lock
 
 *.log
 cute/**/*.mlir
+
+.env

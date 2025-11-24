@@ -12,6 +12,9 @@ version = "0.1.0"
 default = []
 # cuda = ["cuda"]
 
+[system-requirements]
+cuda = "12.9"
+
 [dependencies]
 # python = "3.13.*"
 python = "3.12.*"    # cute needs 3.12
@@ -27,6 +30,9 @@ iree-base-runtime = ">=3.6.0, <4"
 # xyz = { git = "https://github.com/gglin001/xyz.git" }
 xyz = { path = "./xyz" }
 filecheck = ">=1.0.3, <2"
+
+[target.osx-arm64.dependencies]
+pytorch = "2.8.0.*"
 
 [target.linux-aarch64.dependencies]
 triton = ">=3.4.0,<4"
@@ -46,6 +52,11 @@ nvidia-cutlass-dsl = ">=4.1.0, <5"
 # uv pip install "pytorch-triton-xpu==3.4.0" -i https://download.pytorch.org/whl/cu129/
 triton = ">=3.4.0,<4"
 cusparselt = ">=0.8.0.4,<0.9"
+# pixi add cuda-version=12.9 cuda-toolkit=12.9.1 -p linux-64
+cuda-version = "12.9.*"
+cuda-toolkit = "12.9.1.*"
+# pixi add pytorch-gpu=2.8.0 -p linux-64
+pytorch-gpu = "2.8.0.*"
 
 [target.linux-64.pypi-dependencies]
 nvidia-cutlass-dsl = ">=4.1.0, <5"
