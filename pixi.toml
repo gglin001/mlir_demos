@@ -28,7 +28,7 @@ iree-base-compiler = ">=3.6.0, <4"
 iree-base-runtime = ">=3.6.0, <4"
 # use git submodule for a bad network
 # xyz = { git = "https://github.com/gglin001/xyz.git" }
-xyz = { path = "./xyz" }
+# xyz = { path = "./xyz" }
 filecheck = ">=1.0.3, <2"
 
 [target.osx-arm64.dependencies]
