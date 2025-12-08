@@ -68,7 +68,7 @@ nvidia-cutlass-dsl = ">=4.1.0, <5"
 
 [activation.env]
 # needs llvm-project
-PATH = "${PWD}/llvm-project/build/bin:${PATH}"
+PATH = "${PWD}/llvm-mlir/llvm-project/build/bin:${PATH}"
 # CMAKE_PREFIX_PATH = "${CONDA_PREFIX}"
 # TRITON_HOME = "${PWD}/_demos"
-# TRITON_MOCK_PTX_VERSION = "84"
+# TRITON_MOCK_PTX_VERSION = "87"

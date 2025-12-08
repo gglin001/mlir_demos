@@ -9,3 +9,7 @@ pixi.lock
 cute/**/*.mlir
 
 .env
+
+llvm-mlir
+llvm-iree
+llvm-triton
