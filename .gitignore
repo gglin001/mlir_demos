@@ -4,3 +4,12 @@
 .pixi/*
 !.pixi/config.toml
 pixi.lock
+
+*.log
+cute/**/*.mlir
+
+.env
+
+llvm-mlir
+llvm-iree
+llvm-triton

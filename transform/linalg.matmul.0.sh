@@ -69,8 +69,6 @@ PIPELINE+="transform-interpreter{entry-point=__transform_main},"
 PIPELINE+="lower-affine,"
 PIPELINE+="convert-scf-to-cf,"
 PIPELINE+="func.func(convert-arith-to-llvm),"
-# TODO: update when pr merge
-# https://github.com/llvm/llvm-project/pull/128219
 PIPELINE+="convert-vector-to-llvm{vector-contract-lowering=matmul vector-transpose-lowering=flat},"
 PIPELINE+="convert-to-llvm,"
 PIPELINE+="canonicalize"
