@@ -1,0 +1,9 @@
+{
+  "terminal.integrated.env.osx": {
+    // "TRITON_HOME": "${workspaceFolder}/_demos",
+    // "TRITON_MOCK_PTX_VERSION": "89",
+  },
+  "mlir.server_path": "${workspaceFolder}/llvm-mlir/llvm-project/build/bin/mlir-lsp-server",
+  "mlir.tablegen_server_path": "${workspaceFolder}/llvm-mlir/llvm-project/build/bin/tblgen-lsp-server",
+  "mlir.pdll_server_path": "${workspaceFolder}/llvm-mlir/llvm-project/build/bin/mlir-pdll-lsp-server",
+}
