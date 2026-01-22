@@ -67,8 +67,8 @@ nvidia-cutlass-dsl = ">=4.1.0, <5"
 # torch = { version = "==2.8.0+cu129", index = "https://download.pytorch.org/whl/cu129" }
 
 [activation.env]
-# needs llvm-project
-PATH = "${PWD}/llvm-mlir/llvm-project/build/bin:${PATH}"
+# https://github.com/gglin001/llvm-mlir
+PATH_0 = "${PIXI_PROJECT_ROOT}/llvm-mlir/llvm-project/build/bin"
+PATH = "${PATH_0}:${PATH}"
+# debug
 # CMAKE_PREFIX_PATH = "${CONDA_PREFIX}"
-# TRITON_HOME = "${PWD}/_demos"
-# TRITON_MOCK_PTX_VERSION = "87"
